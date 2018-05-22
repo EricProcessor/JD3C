@@ -1,0 +1,124 @@
+@import '../../app.wxss';
+.picker{
+  margin-top: 5px;
+  width: 90%;
+  height: 30px;
+  box-shadow: 0px 1px 10px 1px #9a9a9a; 
+  display: flex;  
+  align-items: center;
+  flex-direction: row;
+  border-radius: 3px;
+  position: relative;
+}
+.picker picker{
+  width:100%;
+  }
+.more_img{
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  margin-top: -0.25rem;
+}
+.picktText{
+  margin-left: 1rem;
+  width: 100%;
+}
+.table{
+  background-color: #f3f3f3;
+  width: 90%;
+  height: 9rem;
+  align-items: center; 
+  display: flex;  
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.data{
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.line{
+  background-color: #9a9a9a;
+  width: 1px;
+}
+.data_child{
+  width: 35%;
+  height: 4rem;
+  background-color: white;
+  display: flex;  
+  justify-content: center;
+  border-radius: 3px;
+  flex-direction: column;
+}
+.data_text{
+  text-align: center;
+  font-size: 11px;
+}
+.num{
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+.yesterday{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 1.5rem;
+  font-size: 12px;
+}
+.btn{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.add{
+  background-color: #ff5a5a;
+  color: white;
+  border-radius: 3px;
+  width: 8rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.add image{
+  width: 2rem;
+  height: 2rem;
+}
+.add text{
+  margin-left: 0.5rem;
+}
+.menu{
+  margin-top: 2rem;
+  margin-bottom: 30rpx;
+  box-shadow: 0px 1px 10px 1px #9a9a9a;
+  width: 90%;
+  height: 5rem;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.menu_child{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.menu_child image{
+  width: 2rem;
+  height: 2rem;
+  
+}
+.menu_child text{
+  font-size: 10px;
+  text-align: center;
+  margin-top: 1rem;
+}

@@ -1,0 +1,71 @@
+<view class="content"> 
+  <!--文字标题-->
+  <view class='title'>
+    <text>数据采集时间：</text>
+  </view>
+<!--时间选择器-->
+  <view class='timeselection'>
+    <view class='pre_next' bindtap='prevMonth'>
+      <image src='../../../img/left.png'></image>
+    </view>
+    <view class='timeshower'>
+      <text>{{month}}月1日~{{month}}月{{day}}日</text>
+    </view>
+    <view class='pre_next' bindtap='nextMonth'>
+      <image src='../../../img/more.png'></image>
+    </view>
+  </view>
+<!--数据展示-->
+  <view class='DataTable'>
+    <view>
+      <view>
+        <text class='DataTitle'>{{array[0].key}}</text>
+        <text class='DataShow'>{{array[0].value}}</text>
+      </view>
+      <view>
+        <text class='DataTitle'>{{array[1].key}}</text>
+        <text class='DataShow'>{{array[1].value}}</text>
+      </view>
+    </view>
+    <view class='line'></view>
+    <view class='member'>
+      <view><text class='DataTitle'>{{array[2].key}}</text></view>
+      <view><text class='DataShow'>{{array[2].value}}</text></view>
+    </view>
+  </view>
+  <view class='DataTable'>
+    <view class='member'>
+      <text class='DataTitle'>{{array[3].key}}</text>
+      <text class='DataShow'>{{array[3].value}}</text>
+    </view>
+     <view class='line'></view>
+    <view class='member'>
+      <text class='DataTitle '>{{array[4].key}}</text>
+      <text class='DataShow'>{{array[4].value}}</text>
+    </view>
+  </view>
+  <view class='charts_container' style="height:509rpx;">
+    <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ec_bar }}"></ec-canvas>
+  </view>
+  <!--按钮组-->
+  <view class='button_group'>
+    <view class="{{_num==1?'btn_act':'btn'}}" data-num ="1" bindtap='click_btn'>会员数量</view>
+    <view class="{{_num==2?'btn_act':'btn'}}" data-num ="2" bindtap='click_btn'>新老顾客</view>
+  </view>
+<!--图表-->
+  <view class='charts'>
+      <view class='charts_container' style="left:{{_num===a?0:'-50rem'}};" >
+           <ec-canvas id="mychart-dom-line1"   canvas-id="mychart-bar1" ec="{{ ec_line1 }}"></ec-canvas>
+      </view>
+      
+         <view class='charts_container' style="left:{{_num===a?0:'-50rem'}};">
+           <ec-canvas id="mychart-dom-line2" canvas-id="mychart-bar2" ec="{{ ec_line2 }}"></ec-canvas>
+        </view>
+ 
+         <view class='charts_container' style="left:{{_num===a?'-50rem':0}};">
+           <ec-canvas id="mychart-dom-line2" canvas-id="mychart-bar2" ec="{{ ec_line2 }}"></ec-canvas>
+        </view>
+ 
+  </view>
+  
+</view>

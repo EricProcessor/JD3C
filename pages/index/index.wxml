@@ -1,0 +1,67 @@
+<view class='content'>
+  <view class='picker'>
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+     <view class='picktText'>
+        {{array[index]}}
+      </view>
+    </picker>
+    <image src='/img/more.png' class='more_img'></image>
+  </view>
+  <view class='table'>
+    <view class='data'>
+      <view class='data_child'>
+       <text class='data_text'>店前流量</text>
+       <text class='num'>44,550</text>
+      </view>
+      <view class='line'></view>
+      <view class='data_child'>
+        <text class='data_text'>进店流量</text>
+        <text class='num'>7,522</text>
+      </view>
+      <view class='line'></view>
+      <view class='data_child'>
+        <text class='data_text'>进店率</text>
+        <text class='num'>29.22%</text>
+      </view>
+    </view>
+    <view class='yesterday'>
+      <view>
+        昨日：<text>23,499</text>
+      </view>
+      <view>
+        昨日：<text>7,522</text>
+      </view>
+      <view> 
+        昨日：<text>32%</text>
+      </view>
+    </view>
+  </view>
+  <view class='btn'> 
+    <view class='add' style="display:none;" bindtap='addStore'>
+      <image src='/img/addStore.png'></image>
+      <text>添加门店</text>
+    </view>
+    <view class='add' bindtap='addDevice'>
+      <image src='/img/addStore.png'></image>
+      <text> 添加设备</text>
+    </view>
+  </view>
+  <view class='menu'  style="display:none;" >
+    <view class='menu_child'>
+      <image src='/img/mine_act.png'></image>
+      <text>广告投放</text>
+    </view>
+    <view class='menu_child'>
+      <image src='/img/home_act.png'></image>
+      <text>门店助手</text>
+    </view>
+    <view class='menu_child'>
+      <image src='/img/data_act.png'></image>
+      <text>数据分析</text>
+    </view>
+    <view class='menu_child'>
+      <image src='/img/data_act.png'></image>
+      <text>敬请期待</text>
+    </view>
+  </view>
+</view>

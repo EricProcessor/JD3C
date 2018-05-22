@@ -1,0 +1,19 @@
+/* pages/index/index.wxss */
+.img-container {
+  text-align: center;
+}
+
+.jd_logo {
+  width: 183rpx;
+  height: 224rpx;
+  margin: 250rpx auto;
+}
+
+.btn {
+  font-size: 18px;
+  line-height: 88rpx;
+  margin: 110rpx 30rpx;
+  border-radius: 5px;
+  background: #f23030;
+  color: #fff;
+}

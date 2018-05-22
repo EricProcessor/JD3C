@@ -1,0 +1,42 @@
+<view class="content"> 
+  <!--文字标题-->
+  <view class='title'>
+    <text>数据采集时间：</text>
+  </view>
+<!--时间选择器-->
+  <view class='timeselection'>
+    <view class='pre_next' bindtap='prevMonth'>
+      <image src='../../../img/left.png'></image>
+    </view>
+    <view class='timeshower'>
+      <text>{{month}}月1日00：00~{{month}}月{{day}}日</text>
+    </view>
+    <view class='pre_next' bindtap='nextMonth'>
+      <image src='../../../img/more.png'></image>
+    </view>
+  </view>
+  <!--排序选择器-->
+  <view class='typepicker'>
+      <picker style="width:100%;" bindchange='bindPickerChange' value="{{objectArry}}" range="{{array}}">
+        <view class='picker'>
+          {{array[index]}}
+        </view>
+      </picker>
+      <image src='../../../img/down.png'></image>
+  </view>
+  <view class='list_content'>
+    <view class='list_item' wx:for="{{arr}}" wx:key="id" wx:for-item="item">
+      <view class='position'>{{item.position}}</view>
+      <view class='list_li'>关注人数 {{item.followNums}}</view>
+      <view class='list_li'>关注总时长 {{item.followtime}}</view>
+      <view class='chart'>
+        <view class='red'></view>
+        <view class='blue' style='width:{{item.boyFollow}}'></view>
+      </view>
+      <view class='ratio'>
+        <view>{{item.boyFollow}} 男</view>
+        <view>{{item.girlfollow}}女</view>
+      </view>
+    </view>
+  </view>
+</view>

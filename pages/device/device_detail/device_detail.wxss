@@ -1,0 +1,36 @@
+/* pages/device/device_detail/device_detail.wxss */
+@import '../../../app.wxss';
+@import '../device.wxss';
+.info{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.device_card{
+  height: 6rem;
+  width: 90%;
+  box-shadow: none;
+  border: 0.5rpx solid #9a9a9a;
+}
+.button{
+  position: absolute;
+  right: 70rpx;
+  top:160rpx;
+  background-color: #ff5a5a;
+  color: white;
+  height: 2rem;
+  line-height: 2rem;
+  width: 6rem;
+  font-size: 0.8rem;
+  vertical-align: middle;
+  text-align: middle;
+}
+.location_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.location{
+  width: 90%;
+  height: 20rem;
+}

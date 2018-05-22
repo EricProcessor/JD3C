@@ -1,0 +1,4 @@
+<view class='img-container'>
+  <image class='jd_logo' src='../../static/img/jd_dog.png'/>
+</view>
+<button class='btn weixin-btn' open-type='getUserInfo' bindgetuserinfo='handleGetUserInfo'>登录/注册</button>

@@ -1,0 +1,22 @@
+<view>
+    <view class="info-box">
+        <!-- <view><text>请填写历史收货人姓名</text></view> -->
+        <view class="label-input">
+
+            <text>历史收货人</text>
+
+            
+            <input type="text" bindinput="changeInput" value="{{receive}}" bindfocus="inputFocus" bindblur="inputBlur" data-pname="/pages/login-index/login-index" placeholder='历史订单收货人姓名' placeholder-class='text-placeholder'/>
+
+            <view class="icon-clear" hidden="{{iconClear}}" bindtap="clearInput"><icon type="clear" size="18"/></view>
+        </view>    
+
+    </view>
+
+    <view class="btn-box">
+        <button class="{{canLogin?'':'btn-disabled'}} jd-red-bg" bindtap="checkReceiver">下一步</button>
+    </view>
+</view>
+<view class="warn-info" hidden="{{warnShow}}">
+    <text>{{warnText}}</text>
+</view>

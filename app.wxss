@@ -1,0 +1,108 @@
+/**app.wxss**/
+.container {
+
+   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.content{
+  width: 100%;
+  display: flex;  
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; 
+  
+  
+}
+.wx-switch-input{
+  width:82rpx !important;
+  height:40rpx !important;
+}
+.wx-switch-input::before{
+  width:80rpx !important;
+  height: 36rpx !important;
+}
+/*绿色样式（true的样式）*/
+.wx-switch-input::after{
+  width: 40rpx !important;
+  height: 36rpx !important;
+}
+/*********************************时间选择器组件开始*/
+.timeselection{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 31rpx;
+  margin-bottom: 18rpx;
+}
+.pre_next{
+	width: 68rpx;
+	height: 98rpx;
+	background-color: #ffffff;
+	border-radius: 5rpx;
+  box-shadow: 0px 0px 10px 0.5px #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.pre_next image{
+  width: 27rpx;
+  height: 28rpx;
+}
+.timeshower{
+	width: 460rpx;
+	height: 100rpx;
+	background-color: #ffffff;
+	border-radius: 5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0.5px #f6f6f6;
+}
+.timeshower text{
+  width: 100%;
+  font-size: 31rpx;
+  text-align: center
+}
+/*时间选择器组件结束******************************/
+/**************************表格组件开始*/
+.data_table{
+  width: 90%;
+  height: 170rpx;
+  border-radius: 8rpx;
+  border: solid 1px #f0f0f0;
+  margin-top: 25rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.data_content{
+  width: 190rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start
+}
+.number{
+  font-family: FZLTHK--GBK1-0;
+	font-size: 40rpx;
+  color: #ff5a5a;
+}
+.data_title{
+  font-size: 30rpx;
+  color: #131313;
+}
+/*表格组件结束**********************************/

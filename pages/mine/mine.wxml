@@ -1,0 +1,7 @@
+<view class='content'>
+  <view class='info'>
+    <image class='photo' src='/img/photo.png'></image>
+    <text class='info_text'>{{userName}}</text>
+  </view>
+  <view bindtap='exit' class='exit'>退出登录</view>
+</view>

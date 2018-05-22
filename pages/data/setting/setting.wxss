@@ -1,0 +1,91 @@
+/* pages/data/setting/setting.wxss */
+@import '../../../app.wxss';
+.all{
+  width: 90%;
+  height: 2.5rem;
+  display: flex;
+  border: 0.5rpx solid #959595;
+  border-radius: 3px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.all text{
+  margin-left: 0.5rem;
+}
+.all switch{
+  margin-right: 0.5rem;
+}
+.intro_container{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+.intro{
+  font-size: 0.7rem;
+  color: #959595;
+  margin: 0.5rem;
+  margin-left: 0.9rem;
+}
+.area{
+  width: 90%;
+  border: 1rpx solid #959595;
+  border-radius: 3px;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+
+
+
+.container {
+
+height: 100%;
+
+display: flex;
+
+flex-direction: 
+column;
+
+align-items: 
+center;
+
+justify-content: 
+space-between;
+
+padding: 200rpx
+0;
+
+box-sizing: border-box;
+
+}
+
+.box{width:300px;
+position: relative}
+
+.main{width:
+90%; height:50px;
+background: #eee;
+border: 1px
+solid #ccc;
+margin:2px 
+auto; 
+
+text-align: center;
+line-height: 50px;}
+
+.mainmove{position:
+absolute; opacity:
+0.7}
+
+.maind{background:
+#fff; border:1px
+dashed #efefef;}
+
+.mainend{position:
+static; opacity:
+1;}

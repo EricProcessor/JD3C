@@ -1,0 +1,132 @@
+/* pages/data/SexRatio/SexRatio.wxss */
+@import '../../../app.wxss'; 
+.title{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #666666;
+  font-size: 29rpx;
+  margin-top: 39rpx
+}
+.timeselection{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 31rpx;
+}
+.pre_next{
+	width: 68rpx;
+	height: 98rpx;
+	background-color: #ffffff;
+	border-radius: 5rpx;
+  box-shadow: 0px 0px 10px 0.5px #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.pre_next image{
+  width: 27rpx;
+  height: 28rpx;
+}
+.timeshower{
+	width: 460rpx;
+	height: 100rpx;
+	background-color: #ffffff;
+	border-radius: 5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0.5px #f6f6f6;
+  margin-bottom: 10rpx;
+}
+.timeshower text{
+  width: 100%;
+  font-size: 31rpx;
+  text-align: center
+}
+.typepicker{
+  width: 90%;
+  height: 100rpx;
+  position: relative;
+  box-shadow: 0px 0px 5px 0.5px #9a9a9a;
+  display: flex;
+  align-items: center;
+  border-radius: 5rpx;
+  margin-top: 52rpx;
+  margin-bottom: 10rpx;
+}
+.picker{
+  margin-left: 10rpx;
+}
+.typepicker image{
+  width: 25rpx;
+  height: 13rpx;
+  position: absolute;
+  right: 30rpx;
+}
+.list_content{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: center
+}
+.list_item{
+  border: solid 2rpx #f0f0f0;
+  border-radius: 8rpx;
+  height: 259rpx;
+  margin: 20rpx 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.position{
+  position: absolute;
+  top: 0;
+  left: 20rpx;
+  padding: 0 30rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #f0f0f0;
+	border-radius: 8rpx;
+  font-size: 28rpx;
+}
+.list_li{
+  width: 90%;
+  margin: 5px auto;
+  text-align: right;
+  font-size: 30rpx
+  
+}
+.chart{
+  width: 90%;
+  margin: 10rpx auto;
+  height: 20rpx;
+  position: relative;
+}
+.red{
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #ff7b7b;
+}
+.blue{
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #91a0ff;
+  z-index: 1;
+}
+.ratio{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 27rpx;
+  color: rgba(19, 19, 19, 0.6);
+}

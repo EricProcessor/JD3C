@@ -1,0 +1,32 @@
+<view bindtap="autoClick">
+    <view class="info-box">
+        <view class="label-input">
+            <text>手机号</text>
+            <input type="number" class="tel-input" maxlength="11"  bindinput="changeInput" data-name="phonecode" value="{{phoneInput}}" bindfocus="inputFocus" bindblur="inputBlur" data-eid="MLoginRegister_PhoneInput" data-pname="/pages/reg/reg"/>
+            
+            <view hidden="{{phoneInput}}" class="text-placeholder">请输入手机号</view>
+
+            <view class="msg-btn {{getMsgCode && waitTime ?'msg-btn-active':''}}" bindtap="obtainCode">{{getMsgCodeText}}</view>
+            <view class="icon-clear phone-icon" hidden="{{iconClear.phoneClear}}" bindtap="clearPhoneInput"><icon type="clear" size="18"/></view>
+        </view>
+        <view class="label-input no-border">
+            <text>验证码</text>
+            <input type="number" maxlength="8" bindinput="changeInput" data-name="msgcode" value="{{msgInput}}" bindfocus="inputFocus" bindblur="inputBlur" data-eid="MLoginRegister_MsgInput" data-pname="/pages/reg/reg"/>
+
+            <view hidden="{{msgInput}}" class="text-placeholder">请输入短信验证码</view>
+
+            <view class="icon-clear" hidden="{{iconClear.msgClear}}" bindtap="clearMsgInput"><icon type="clear" size="18"/></view>
+            <view class="icon-clear code-icon" hidden="{{msgWarn}}"><icon type="warn" size="18"/></view>
+        </view>
+        
+    </view>
+    <view class="btn-box">
+        <button class="{{canLogin?'':'btn-disabled'}} jd-red-bg" bindtap="doLogin">登录</button>
+        <view class="other-btn-box">
+        若您输入的手机号未注册，将为您直接注册。注册即视为同意<span bindtap="goProtocol">《京东用户注册协议》</span>
+        </view>
+    </view>
+</view>
+<view class="warn-info" hidden="{{warnShow}}">
+    <text>{{warnText}}</text>
+</view>

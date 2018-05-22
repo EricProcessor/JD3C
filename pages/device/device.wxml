@@ -1,0 +1,115 @@
+<view class='content'>
+<!--遮罩层-->
+  <view class='cover' wx:if="{{flag}}" bindtap='show' catchtouchmove='scrolly'>
+  </view>
+   <view class='searchContainer'>
+    <input id='btnChange' type='button' bindtap='change' class='change'             style='display:{{change}}' value='搜索您的设备'>
+    </input>
+    <view id='search' style='display:{{text}}' class='search_input'>
+      <view class='searchText'>
+        <input id='searchText' type='text' focus="{{fcs}}"></input>
+      </view>
+      <view class='searchBtn'>
+        <button id='searchBtn'>搜索</button>
+      </view>
+    </view>
+  </view>
+  <view class='device_list'>
+    <view class='device_card' bindtap='device_detail'>
+      <view class='photo'>
+        <image src='/img/camera.png'></image>
+      </view>
+      <view class='text'>
+        <text class='title'>理货摄像头（0feqre6ep）</text>
+        <text class='status0'>离线</text>
+      </view>
+      <view class='more'>
+        <image src='/img/more.png'></image>
+      </view>
+    </view>
+    <view class='device_card' bindtap='device_detail'>
+      <view class='photo'>
+        <image src='/img/camera.png'></image>
+      </view>
+      <view class='text'>
+        <text class='title'>理货摄像头（0feqre6ep）</text>
+        <text class='status1'>在线</text>
+      </view>
+      <view class='more'>
+        <image src='/img/more.png'></image>
+      </view>
+    </view>
+    <view class='device_card' bindtap='device_detail'>
+      <view class='photo'>
+        <image src='/img/camera.png'></image>
+      </view>
+      <view class='text'>
+        <text class='title'>理货摄像头（0feqre6ep）</text>
+        <text class='status0'>离线</text>
+      </view>
+      <view class='more'>
+        <image src='/img/more.png'></image>
+      </view>
+    </view>
+    <view class='device_card' bindtap='device_detail'>
+      <view class='photo'>
+        <image src='/img/camera.png'></image>
+      </view>
+      <view class='text'>
+        <text class='title'>理货摄像头（0feqre6ep）</text>
+        <text class='status1'>在线</text>
+      </view>
+      <view class='more'>
+        <image src='/img/more.png'></image>
+      </view>
+    </view>
+    <view class='device_card' bindtap='device_detail'>
+      <view class='photo'>
+        <image src='/img/camera.png'></image>
+      </view>
+      <view class='text'>
+        <text class='title'>理货摄像头（0feqre6ep）</text>
+        <text class='status0'>离线</text>
+      </view>
+      <view class='more'>
+        <image src='/img/more.png'></image>
+      </view>
+    </view>
+    <view class='device_card' bindtap='device_detail'>
+      <view class='photo'>
+        <image src='/img/camera.png'></image>
+      </view>
+      <view class='text'>
+        <text class='title'>理货摄像头（0feqre6ep）</text>
+        <text class='status1'>在线</text>
+      </view>
+      <view class='more'>
+        <image src='/img/more.png'></image>
+      </view>
+    </view>
+    <view class='device_card' bindtap='device_detail'>
+      <view class='photo'>
+        <image src='/img/camera.png'></image>
+      </view>
+      <view class='text'>
+        <text class='title'>理货摄像头（0feqre6ep）</text>
+        <text class='status1'>在线</text>
+      </view>
+      <view class='more'>
+        <image src='/img/more.png'></image>
+      </view>
+    </view>
+    <view class='device_card' bindtap='device_detail'>
+      <view class='photo'>
+        <image src='/img/camera.png'></image>
+      </view>
+      <view class='text'>
+        <text class='title'>理货摄像头（0feqre6ep）</text>
+        <text class='status1'>在线</text>
+      </view>
+      <view class='more'>
+        <image src='/img/more.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

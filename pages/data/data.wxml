@@ -1,0 +1,21 @@
+<!--主页面-数据看板-->
+<view class='content'>
+  <view class='title'>京东零售数据看板</view>
+  <view class='time'>数据采集时间：{{month}}月{{day}}日 00：00~{{time}}</view>
+  <view class='blank'></view>
+  <view class='card_wrap'>
+     
+    
+     <view wx:for="{{array}}" wx:key="id" data-key="{{item.key}}"   wx:for-item="item" class='card {{item.upOrDown===1?"up":""}} {{item.upOrDown===0?"down":""}}' bindtap='enterFlowStatis'>
+      <text class='card_title'>{{item.title}}</text>
+      <text class='card_num'>{{item.value}}</text>
+      <text>{{_key}}</text>
+    </view>
+ 
+
+   
+    <view class='add'  style="opacity:0;" bindtap='setting'>
+      <image class='add_img' src='/img/add.png'></image>
+    </view>
+  </view>
+</view>

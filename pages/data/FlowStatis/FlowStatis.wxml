@@ -1,0 +1,51 @@
+<view class='content'> 
+<!--文字标题-->
+  <view class='title'>
+    <text>数据采集时间：</text>
+  </view>
+<!--时间选择器-->
+  <view class='timeselection'>
+    <view class='pre_next' bindtap='prevMonth'>
+      <image src='../../../img/left.png'></image>
+    </view>
+    <view class='timeshower'>
+      <text>{{month}}月1日00：00~{{month}}月{{day}}日</text>
+    </view>
+    <view class='pre_next' bindtap='nextMonth'>
+      <image src='../../../img/more.png'></image>
+    </view>
+  </view>
+<!--表格-->
+  <view class='data_table'>
+    <view class='line'></view>
+    <view class='data_content'>
+      <text class='data_title'>{{array[0].title}}</text>
+      <text class='number'>{{array[0].customerFlowTotal}}</text>
+    </view>
+    <view class='data_content'>
+      <text class='data_title'></text>
+      <text class='number'></text>
+    </view>
+  </view>
+  
+<!--按钮组-->
+  <view class='button_group'>
+    <view class="{{_num==1?'btn_act':'btn'}}" data-num = "1" bindtap='click_btn'>客流统计</view>
+    <view class="{{_num==2?'btn_act':'btn'}}" data-num = "2" bindtap='click_btn'>进店率</view>
+    <view class="{{_num==3?'btn_act':'btn'}}" data-num = "3" bindtap='click_btn'>平均停留时长</view>
+  </view>
+<!--图表-->  
+  <view class='charts'>
+    <view class='charts_container' style="opacity:{{_num===a?1:0}};" >
+           <ec-canvas id="mychart-dom-line1"   canvas-id="mychart-bar1" ec="{{ ec_line1 }}"></ec-canvas>
+      </view>
+      
+         <view class='charts_container' style="opacity:{{_num===b?1:0}};">
+           <ec-canvas id="mychart-dom-line2" canvas-id="mychart-bar2" ec="{{ ec_line2 }}"></ec-canvas>
+        </view>
+
+        <view class='charts_container' style="opacity:{{_num===c?1:0}};">
+           <ec-canvas id="mychart-dom-line3" canvas-id="mychart-bar3" ec="{{ ec_line3 }}"></ec-canvas>
+        </view>
+  </view>
+</view>

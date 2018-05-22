@@ -1,0 +1,8 @@
+<view wx:if="{{bangding=='2'}}" class="remarktitle1">该设备已经绑定</view>
+<view wx:if="{{bangding=='1'}}">
+<view class="remarktitle">备注:</view>
+  <input id='searchText' type='text' value='{{remark}}'  ></input>
+  <view id='btnChange' type='button' bindtap='bindDevice'  value='绑定设备'>绑定设备</view>
+
+
+</view>

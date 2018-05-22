@@ -1,0 +1,30 @@
+/* pages/mine/mine.wxss */
+@import '../../app.wxss';
+.info{
+  width: 95%;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #9a9a9a;
+  border-radius: 3px;
+}
+.photo{
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+}
+.info_text{
+  margin-left: 0.5rem
+}
+.exit{
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 3rem;
+  color: white;
+  background-color: #ff5a5a;
+  border-radius: 3px;
+}

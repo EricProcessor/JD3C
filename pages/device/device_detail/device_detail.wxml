@@ -1,0 +1,17 @@
+<view class='contemt'>
+  <view class='info'>
+    <view class='device_card' >
+      <view class='photo'>
+        <image src='/img/camera.png'></image>
+      </view>
+      <view class='text'>
+        <text class='title'>理货摄像头（0feqre6ep）</text>
+        <text class='status1'>在线</text>
+      </view>
+      <button class='button'>远程巡店</button>
+    </view>
+  </view>
+  <view class='location_container'>
+    <map class='location' longitude='116.394476' latitude='40.00694' scale='18' markers="{{markers}}"></map>
+  </view>
+</view>

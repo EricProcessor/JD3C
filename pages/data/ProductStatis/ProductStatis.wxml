@@ -1,0 +1,50 @@
+<view class='content'>
+<!--标题-->
+  <view class='title'>
+    <text>数据采集时间</text>
+  </view>
+  <!--时间选择器-->
+  <view class='timeselection'>
+    <view class='pre_next' bindtap='prevMonth'>
+      <image src='../../../img/left.png'></image>
+    </view>
+    <view class='timeshower'>
+      <text>{{month}}月1日00：00~{{month}}月{{day}}日</text>
+    </view>
+    <view class='pre_next' bindtap='nextMonth'>
+      <image src='../../../img/more.png'></image>
+    </view>
+  </view>
+  <!--表格-->
+  <view class='data_table'>
+    <view class='data_content'>
+      <text class='data_title'>商品总关注数</text>
+      <text class='number'></text>
+    </view>
+    <view class='line'></view>
+    <view class='data_content'>
+      <text class='data_title'>商品总销量</text>
+      <text class='number'></text>
+    </view>
+  </view>
+  <!--第二个表格-->
+   <view class='data_table'>
+    <view class='data_content'>
+      <text class='data_title'>订单转化率</text>
+      <text class='number'></text>
+    </view>
+    <view class='line'></view>
+    <view class='data_content'>
+      <text class='data_title'>销售额</text>
+      <text class='number'></text>
+    </view>
+  </view>
+  <!--按钮组-->
+  <view class='button_group'>
+    <view class="{{_num==1?'btn_act':'btn'}}" data-num = "1" bindtap='click_btn'>商品漏斗</view>
+    <view class="{{_num==2?'btn_act':'btn'}}" data-num = "2" bindtap='click_btn'>订单转化率</view>
+    <view class="{{_num==3?'btn_act':'btn'}}" data-num = "3" bindtap='click_btn'>销售额</view>
+  </view>
+<!--图表-->
+  <view class='charts'></view>
+</view>
